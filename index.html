@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dev Kumar portfolio focused on Cisco Unified Communications, CUCM, Unity Connection, PCCE, CUBE, SIP troubleshooting, call recording, and operational support."
+    />
+    <title>Dev Kumar | Unified Communications Engineering</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grid-backdrop" aria-hidden="true"></div>
+    <div class="signal-scan" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="#top" aria-label="Dev Kumar home">
+          <span class="brand-mark">DK</span>
+          <span>Dev Kumar</span>
+        </a>
+        <div class="nav-links" aria-label="Primary navigation">
+          <a href="#systems">Systems</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#research">Research</a>
+        </div>
+        <a class="nav-action" href="https://github.com/devthedevil" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="section-inner hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Cisco UC / SIP diagnostics / contact center operations</p>
+            <h1>
+              I keep enterprise voice systems
+              <span id="dynamicText" class="dynamic-text">clear under pressure.</span>
+            </h1>
+            <p class="hero-lede">
+              Unified communications engineer working across CUCM clusters, Unity Connection, PCCE call routing,
+              CUBE gateways, SIP traces, call recording, ServiceNow, and on-call operations. I like the blend of
+              precision and calm: finding the exact call path, explaining the failure, and leaving the runbook sharper.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#projects">View Projects</a>
+              <a class="button ghost" href="https://leetcode.com/u/dev_kumar_dklv/" target="_blank" rel="noreferrer">LeetCode</a>
+            </div>
+          </div>
+
+          <div class="uc-console reveal" aria-label="Unified communications operations console">
+            <div class="console-top">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="console-body">
+              <div class="console-row active">
+                <span>cluster</span>
+                <strong>CUCM Publisher / Subscriber health</strong>
+              </div>
+              <div class="console-row">
+                <span>route</span>
+                <strong>CSS, partitions, route patterns, hunt pilots</strong>
+              </div>
+              <div class="console-row">
+                <span>edge</span>
+                <strong>CUBE dial peers, codecs, DTMF, SIP traces</strong>
+              </div>
+              <div class="console-row">
+                <span>queue</span>
+                <strong>PCCE IVR, skill groups, overflow logic</strong>
+              </div>
+              <div class="console-row">
+                <span>record</span>
+                <strong>NICE, Verint, Calabrio, Imagicle paths</strong>
+              </div>
+            </div>
+            <div class="health-panel">
+              <span>operational signal</span>
+              <div class="meter"><i></i></div>
+              <strong>trace evidence ready</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="metric-band" aria-label="Impact highlights">
+        <div class="metric">
+          <strong>99.99%</strong>
+          <span>enterprise uptime</span>
+        </div>
+        <div class="metric">
+          <strong>50%</strong>
+          <span>incident reduction</span>
+        </div>
+        <div class="metric">
+          <strong>40K+</strong>
+          <span>users supported</span>
+        </div>
+        <div class="metric">
+          <strong>12</strong>
+          <span>engineers led</span>
+        </div>
+      </section>
+
+      <section id="systems" class="section systems-section">
+        <div class="section-inner">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Plan, build, operate</p>
+            <h2>Voice operations are a call path plus evidence</h2>
+            <p>
+              A stable UC environment depends on clean dial plans, healthy clusters, reliable contact-center logic,
+              vendor-aware integrations, and careful incident notes. I approach voice issues by mapping the path,
+              collecting the trace, isolating the mismatch, and turning the fix into reusable documentation.
+            </p>
+          </div>
+
+          <div class="diagram-panel reveal">
+            <svg class="system-diagram" viewBox="0 0 1160 540" role="img" aria-labelledby="diagramTitle diagramDesc">
+              <title id="diagramTitle">Unified communications call path and operations diagram</title>
+              <desc id="diagramDesc">
+                Diagram showing endpoint calls flowing through CUCM, CUBE/SIP, PCCE/IVR, Unity voicemail, recording
+                integrations, and operations reporting.
+              </desc>
+              <defs>
+                <linearGradient id="flowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#25d5ce" />
+                  <stop offset="48%" stop-color="#f2c84b" />
+                  <stop offset="100%" stop-color="#86a8ff" />
+                </linearGradient>
+                <filter id="softGlow">
+                  <feGaussianBlur stdDeviation="5" result="blur" />
+                  <feMerge>
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+
+              <path class="flow-line" d="M210 260 C238 230, 266 214, 296 204" />
+              <path class="flow-line" d="M500 250 C522 270, 540 286, 560 296" />
+              <path class="flow-line" d="M792 292 C820 306, 842 324, 862 344" />
+              <path class="branch-line" d="M674 206 C720 130, 792 124, 842 156" />
+              <path class="branch-line alt" d="M750 350 C694 440, 574 454, 494 420" />
+
+              <g class="node cyan" transform="translate(40 198)">
+                <rect width="170" height="126" rx="8" />
+                <text x="85" y="49" text-anchor="middle">Endpoints</text>
+                <text x="85" y="80" text-anchor="middle">phones | users</text>
+              </g>
+
+              <g class="node yellow" transform="translate(296 116)">
+                <rect width="204" height="136" rx="8" />
+                <text x="102" y="50" text-anchor="middle">CUCM cluster</text>
+                <text x="102" y="82" text-anchor="middle">pub | sub | dial plan</text>
+              </g>
+
+              <g class="node green" transform="translate(560 204)">
+                <rect width="232" height="138" rx="8" />
+                <text x="116" y="50" text-anchor="middle">CUBE / SIP</text>
+                <text x="116" y="82" text-anchor="middle">dial peer | codec</text>
+              </g>
+
+              <g class="node blue" transform="translate(862 296)">
+                <rect width="210" height="128" rx="8" />
+                <text x="105" y="48" text-anchor="middle">PCCE / IVR</text>
+                <text x="105" y="80" text-anchor="middle">queues | routing</text>
+              </g>
+
+              <g class="node pink" transform="translate(842 100)">
+                <rect width="218" height="126" rx="8" />
+                <text x="109" y="48" text-anchor="middle">Recording</text>
+                <text x="109" y="80" text-anchor="middle">BiB | SIP | vendors</text>
+              </g>
+
+              <g class="note" transform="translate(248 378)">
+                <rect width="342" height="96" rx="8" />
+                <text class="note-title" x="24" y="32">WORK I KEEP CHOOSING</text>
+                <text class="note-line" x="24" y="58">turn a failed call into</text>
+                <text class="note-line" x="24" y="80">a clearer operating model</text>
+              </g>
+            </svg>
+          </div>
+
+          <div class="craft-grid">
+            <article class="craft-card reveal">
+              <span class="craft-index">01</span>
+              <h3>Trace the call path</h3>
+              <p>
+                I connect symptoms to evidence: CUCM logs, CUBE traces, dial-peer matching, codec negotiation, DTMF
+                behavior, and registration state.
+              </p>
+            </article>
+            <article class="craft-card reveal">
+              <span class="craft-index">02</span>
+              <h3>Operate the cluster</h3>
+              <p>
+                I care about provisioning quality, Publisher/Subscriber health, voicemail integration, patch testing,
+                capacity reporting, and escalation hygiene.
+              </p>
+            </article>
+            <article class="craft-card reveal">
+              <span class="craft-index">03</span>
+              <h3>Document the fix</h3>
+              <p>
+                The job is not done when the ticket closes. I like leaving runbooks, routing notes, and RCA details that
+                make the next outage shorter.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section experience-section">
+        <div class="section-inner">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Professional experience</p>
+            <h2>Unified communications support with systems engineering discipline</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-meta">
+                <span>Mar 2025 - Present</span>
+                <strong>Sprouts AI</strong>
+              </div>
+              <div class="timeline-content">
+                <h3>Software / UC Support Engineer</h3>
+                <p class="location">Chicago, IL</p>
+                <ul>
+                  <li>
+                    Provided Cisco UC administration support across CUCM 12.5 Publisher/Subscriber environments and
+                    Unity Connection voicemail, handling extension provisioning, device and user profile setup,
+                    partitions, CSS, route patterns, and phone registration troubleshooting.
+                  </li>
+                  <li>
+                    Troubleshot CUBE / SIP trunk issues including dial-peer mismatches, codec negotiation, DTMF interop,
+                    and one-way audio, using SIP traces and CUCM/CUBE logs to drive resolution and reduce
+                    mean-time-to-recover.
+                  </li>
+                  <li>
+                    Authored Python scripts and API-based automation against UC interfaces to streamline repetitive
+                    provisioning and reporting tasks, lifting team productivity and reducing manual ticket volume.
+                  </li>
+                  <li>
+                    Participated in on-call rotation and incident response for voice and contact-center issues, mentored
+                    peers, and contributed to documentation of system design, operating procedures, and runbooks.
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-meta">
+                <span>Aug 2023 - Mar 2025</span>
+                <strong>Resilience Inc</strong>
+              </div>
+              <div class="timeline-content">
+                <h3>Software / UC Engineer</h3>
+                <p class="location">Chicago, IL</p>
+                <ul>
+                  <li>
+                    Administered Cisco Unified Communications Manager (CUCM 12.5, with 14 upgrade and compatibility
+                    validation), Unity Connection voicemail, and CUBE voice gateways supporting hundreds to
+                    low-thousands of phones/extensions.
+                  </li>
+                  <li>
+                    Designed and supported PCCE inbound IVR routing, business hours and holiday schedules, caller input
+                    capture, skill-group mapping, overflow / after-hours logic, and voicemail fallback when queue
+                    thresholds were exceeded, improving call-routing accuracy and caller experience.
+                  </li>
+                  <li>
+                    Supported call recording integrations (NICE, Verint, Calabrio, Imagicle familiarity) using SIP-based
+                    recording and built-in bridge (BiB) per endpoint and compliance requirements; supported vendor
+                    relationships and capacity/performance/uptime reporting.
+                  </li>
+                  <li>
+                    Owned on-call escalation, system outage response, and trouble-ticket resolution; maintained
+                    up-to-date documentation of system design, dial plans, partitions/CSS, and operating procedures.
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-meta">
+                <span>Apr 2018 - Aug 2023</span>
+                <strong>Tata Steel</strong>
+              </div>
+              <div class="timeline-content">
+                <h3>Software Engineer / IT Project Manager</h3>
+                <ul>
+                  <li>
+                    Delivered enterprise IT and platform engineering across 5+ business domains for 40K+ users, working
+                    extensively in ServiceNow ticketing for incident, change, and request management at enterprise scale.
+                  </li>
+                  <li>
+                    Led a 12-person cross-functional team driving full SDLC discipline, on-call coverage, incident
+                    reviews, ITIL-aligned change management, and Agile delivery, cutting production incidents 50% and
+                    mentoring team members.
+                  </li>
+                  <li>
+                    Architected high-availability microservices on Linux/VMware-based infrastructure, achieving 99.99%
+                    uptime and 40% faster API response times across enterprise systems.
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skill-section">
+        <div class="section-inner skill-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Working set</p>
+            <h2>Tools for stable voice operations</h2>
+          </div>
+          <div class="skill-cloud reveal" aria-label="Technical skills">
+            <span>CUCM 12.5</span>
+            <span>CUCM 14</span>
+            <span>Unity Connection</span>
+            <span>PCCE</span>
+            <span>CUBE</span>
+            <span>SIP Trunks</span>
+            <span>Dial Peers</span>
+            <span>DTMF</span>
+            <span>G.711</span>
+            <span>G.729</span>
+            <span>Opus</span>
+            <span>Packet Capture</span>
+            <span>ServiceNow</span>
+            <span>NICE</span>
+            <span>Verint</span>
+            <span>Calabrio</span>
+            <span>Imagicle</span>
+            <span>Python</span>
+            <span>Linux</span>
+            <span>ITIL</span>
+            <span>Agile</span>
+            <span>Runbooks</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects-section">
+        <div class="section-inner">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Selected projects</p>
+            <h2>Systems depth, real-time platforms, and automation range</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card featured reveal">
+              <div class="project-topline">Linux kernel | C | device I/O</div>
+              <h3>Character Device Driver</h3>
+              <p>
+                Linux character device driver with open/read/write/release/ioctl semantics, kernel/user-space I/O,
+                synchronization, and debugging habits transferable to UC server administration.
+              </p>
+              <div class="project-links">
+                <a class="project-link source-link" href="https://github.com/devthedevil/Character-Device-Driver" target="_blank" rel="noreferrer">View source</a>
+              </div>
+            </article>
+
+            <article class="project-card featured reveal">
+              <div class="project-topline">Event-driven ingestion | Kafka | cloud</div>
+              <h3>Real-time Stock Market Analysis Pipeline</h3>
+              <p>
+                Streaming ingestion pipeline with Kafka, Spark Structured Streaming, and layered cloud storage,
+                emphasizing freshness, traceability, and replay-safe data flow.
+              </p>
+              <div class="project-links">
+                <a class="project-link source-link" href="https://github.com/devthedevil/Realtime-Stock-Market-Analysis" target="_blank" rel="noreferrer">View source</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-topline">Commerce AI | webhooks | retrieval</div>
+              <h3>AskMyStore</h3>
+              <p>
+                Shopify-integrated application using webhooks, product data ingestion, vector retrieval, and fast
+                customer-facing responses over changing store data.
+              </p>
+              <div class="project-links">
+                <a class="project-link demo-link" href="https://askmystore.vercel.app/" target="_blank" rel="noreferrer">Open demo</a>
+                <a class="project-link source-link" href="https://github.com/devthedevil/AskMyStore" target="_blank" rel="noreferrer">View source</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-topline">Trading | dashboard | signals</div>
+              <h3>TradeSentinel</h3>
+              <p>
+                Market-aware trading dashboard focused on signal visibility, portfolio state, and practical decision
+                support for active monitoring workflows.
+              </p>
+              <div class="project-links">
+                <a class="project-link demo-link" href="https://tradesentinel.vercel.app/" target="_blank" rel="noreferrer">Open demo</a>
+                <a class="project-link source-link" href="https://github.com/devthedevil/tradesentinel" target="_blank" rel="noreferrer">View source</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-topline">C++ | multicast | market data</div>
+              <h3>CME MDP 3.0 Multicast Feed Handler</h3>
+              <p>
+                Low-latency feed-handler work for decoding structured multicast market data, focused on deterministic
+                processing, protocol discipline, and performance-aware C++.
+              </p>
+              <div class="project-links">
+                <a class="project-link source-link" href="https://github.com/devthedevil/CME-Multicast-Market-Data-Feed-Handler-C-" target="_blank" rel="noreferrer">View source</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-topline">LangChain | agents | search</div>
+              <h3>LangChain Chat with Search</h3>
+              <p>
+                Chat application combining LangChain agents, live search, and Streamlit UX to reason over changing
+                information sources.
+              </p>
+              <div class="project-links">
+                <a class="project-link source-link" href="https://github.com/devthedevil/LangChain-Chat-with-Search" target="_blank" rel="noreferrer">View source</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-topline">MERN | realtime | MongoDB</div>
+              <h3>STRANGERS</h3>
+              <p>
+                Social platform with event-driven backend behavior, real-time messaging, MongoDB persistence, and
+                JSON-based API design.
+              </p>
+              <div class="project-links">
+                <a class="project-link source-link" href="https://github.com/devthedevil/Strangers" target="_blank" rel="noreferrer">View source</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-topline">Operating systems | scheduling | memory</div>
+              <h3>EXPERIMENTAL OPERATING SYSTEM</h3>
+              <p>
+                Operating-system lab work exploring process control, memory layout, file-system concepts, and system
+                calls with an implementation-first approach.
+              </p>
+              <div class="project-links">
+                <a class="project-link source-link" href="https://github.com/devthedevil/EXPOS" target="_blank" rel="noreferrer">View source</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-topline">Hardware | ISA | datapath</div>
+              <h3>16-Bit RISC Processor</h3>
+              <p>
+                Processor design project mapping instruction behavior, datapath control, and hardware-level execution
+                decisions into a working lab implementation.
+              </p>
+              <div class="project-links">
+                <a class="project-link source-link" href="https://github.com/devthedevil/Hardware-lab" target="_blank" rel="noreferrer">View source</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="research" class="section research-section">
+        <div class="section-inner research-grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Research and learning</p>
+            <h2>Careful comparison improves support instincts</h2>
+            <p>
+              Whether it is an algorithm or a call path, I like work that forces clear evidence: compare the options,
+              inspect the failure mode, and write down what actually changed.
+            </p>
+          </div>
+          <div class="research-cards">
+            <article class="research-card reveal">
+              <h3>IEEE Publication</h3>
+              <p>
+                Comparative study of movie recommendation systems using feature engineering and improved error
+                functions across collaborative, content-based, and hybrid methods.
+              </p>
+              <div class="project-links">
+                <a class="project-link demo-link" href="https://ieeexplore.ieee.org/document/10094480" target="_blank" rel="noreferrer">Open paper</a>
+                <a class="project-link source-link" href="https://github.com/devthedevil/Comparative-Study-of-Movie-Recommendation-System/blob/main/Netflix_Movie.ipynb" target="_blank" rel="noreferrer">View source</a>
+              </div>
+            </article>
+            <article class="research-card reveal">
+              <h3>Certificate</h3>
+              <p>
+                Supporting credential linked with the publication and project work, included as verification for the
+                research artifact.
+              </p>
+              <div class="project-links">
+                <a class="project-link demo-link" href="https://drive.google.com/file/d/1rayr6Cht6quyLUJOXWOAcBi_rxQp2Ol0/view" target="_blank" rel="noreferrer">View certificate</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section close-section">
+        <div class="section-inner close-card reveal">
+          <p class="eyebrow">What keeps the work interesting</p>
+          <h2>Reliable communication feels invisible until something breaks.</h2>
+          <p>
+            I enjoy the craft behind that invisibility: clean routing, readable traces, thoughtful escalation, and
+            documentation that helps the next engineer restore service faster.
+          </p>
+          <a class="button primary" href="https://github.com/devthedevil" target="_blank" rel="noreferrer">View GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Dev Kumar</span>
+      <span>Unified communications engineering portfolio</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
